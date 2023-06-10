@@ -1,8 +1,18 @@
 package com.driver;
 
-public abstract class Boat implements WaterVehicle{
+public class Boat implements WaterVehicle{
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String getVehicleName() {
+        return name;
+    }
+
+    @Override
+    public int getVehicleCapacity() {
+        return capacity;
     }
 
     public void setCapacity(int capacity) {
